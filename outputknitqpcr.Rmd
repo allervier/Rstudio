@@ -1,0 +1,50 @@
+---
+title: "notebook-qpcr-jul2016"
+author: "allerdien"
+date: "28 juni 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+De packages die geladen zijn:
+```{r}
+library(ggplot2)
+```
+
+```{r sessioninfo}
+sessionInfo()
+getwd()
+setwd("N:/2016 protocol-logboek-plaatjes/R-studio/qpcr")
+list.files()
+
+```
+# use cat om een file te maken (cat("xxxxxx", file = "naam.md")). Om data toe te voegen cat("mt", file = "naam.md", append = TRUE). file.rename(from = "xxxx", to = "yyyy"), file.copy(from = "zzz" to "yyy")
+
+# Om data reproduceerbaar op te slaan gebruik plain text. .cvs or .tsv.(\t) gebruik commando write.table(data, "/xx/xx/xx/data.csv", sep = ",", rownames = FALSE)
+
+# github account basics: https://git-scm.com/book/en/v2/Getting-Started-Git-Basics.
+# accountnaam allerdien op beide email adressen. 
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
