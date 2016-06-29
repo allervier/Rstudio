@@ -22,6 +22,7 @@ sessionInfo()
 
 ```{r cars}
 summary(cars)
+dim(cars)
 ```
 
 ## Including Plots
